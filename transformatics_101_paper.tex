@@ -1,0 +1,211 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=2.0cm, top=0.8cm]{geometry}
+%\usepackage[left=1cm, top=0cm, bottom=0.2cm]{geometry} % Adjust these values as needed
+\usepackage{hyperref}
+\usepackage{parskip}
+
+
+% for maths
+\usepackage{amsmath}
+% for number sets symbols
+\usepackage{amssymb}
+%\usepackage{ntheorem}
+\usepackage{amsthm}
+
+
+% for writing our theorems and defs...
+\newtheorem{comp}{Computation}
+\newtheorem{theo}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{lem}{Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{axiom}{Axiom}
+\newtheorem{post}{Postulate}
+\newtheorem{trans}{Transformation}
+\newtheorem{transf}{Transformer}
+\newtheorem{law}{Law}
+\newtheorem{prob}{Problem}
+\newtheorem{soln}{Solution}
+\newtheorem{alg}{Algorithm}
+
+\title{TRANSFORMATICS 101 - explained}
+
+\usepackage{amsmath, amssymb, graphicx}
+
+% Define \invpi to flip the pi symbol and use it as a function
+\newcommand{\invpi}[1]{\mathop{\rotatebox[origin=c]{180}{$\pi$}}#1}
+\newcommand{\invdel}[1]{\mathop{\rotatebox[origin=c]{180}{$\Delta$}}#1}
+
+\author{Joseph Willrich Lutalo\thanks{Principal Investigator at Nuchwezi Research, GARUGA, Uganda.\\ \textbf{ORCID:} \url{https://orcid.org/0000-0002-0002-4657}}\\Nuchwezi Research\\\href{mailto:joewillrich@gmail.com}{joewillrich@gmail.com}, \href{mailto:jwl@nuchwezi.com}{jwl@nuchwezi.com}}
+
+\date \today
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\Large
+In only \textbf{10 general foundational results}\cite{Lutalo2025_trans_101}\cite{lutalo_2025_trans101_1page} --- all \textbf{based on earlier mathematical research} by the author, as well as \textbf{10 extra abstractions} spanning \textbf{how transformatics might be leveraged} as \textbf{a basis mathematics} \texttt{for problems} in; \texttt{number theory} and \texttt{cryptography} (o-SSIs); \texttt{mathematical statistics} (ADM, TCR, PCR, MSS, SC, PC); \texttt{linear algebra} (super sequences); \texttt{computer science} (TEA language, transformer-chains/sequence-transformers) and \texttt{information theory} (entropy of a sequence) among others, we distill and establish, in a summarized form, the \textbf{core foundations of Transformatics}\cite{transformatics} as its own mathematical theory, branch, or \textbf{discipline}. In this \textbf{mini-thesis}. Each foundational result presented is likewise accompanied by one or \textbf{more references} to some earlier work where the idea or presented concept was first developed, presented, or applied by the author during their research. \textbf{Useful notes and commentary} are also included where necessary, and in the extension decade of \textbf{proposed abstractions}, also commentary about how the proposals relate to the decade of foundational results likewise catered for.
+ \newline\newline
+     \textbf{Keywords}: Foundations, Transformatics, Sequence Analysis,  Sequence Transformers, Thesis
+\end{abstract}
+
+\section{Foundations of a New Mathematics of Sequences}
+
+\subsection{Result 1: The Empty Sequence\cite{lnspaper}}
+
+$\Theta = \langle \rangle \implies |\Theta| = 0 \quad \land \quad \Theta \equiv \emptyset$
+
+\subsection{Result 2: A Symbol Set\cite{Lutalo2024gtnc}}
+
+$\psi_\beta^n = \langle \beta_{i \in [1,n]} \rangle : n \in \mathbb{N} : \invpi(\beta_i \in \psi_\beta) = 1 \quad \forall \beta_i \in \psi_\beta$
+
+\subsection{Result 3: A Sequence\cite{lnspaper}}
+
+$\Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta : n \geq 1$
+
+\subsection{Result 4: Sequence Cardinality\cite{adtpaper}\cite{Lutalo2024gtnc}}
+
+$\forall \Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta \quad \implies \quad \invpi(\Theta^n) = |\Theta^n| = n \in \mathbb{N}$ 
+
+
+
+\subsection{Result 5: A Sequence Symbol Set\cite{ossipaper}\cite{Lutalo2024gtnc}}
+
+$\psi(\Theta^n) = \langle \theta_{i \in [1,k]} \rangle : k,n \in \mathbb{N} \land k \geq 1 : \invpi(\theta_i \in \psi(\Theta^n)) = 1 \quad \forall \theta_i \in \Theta^n : k \leq n : \invpi(\psi(\Theta^n)) = k$
+
+
+\subsection{Result 6: A Sequence Transformation\cite{transformatics}\cite{lnspaper}}
+
+$\Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta \rightarrow \Theta^* = \langle \theta^*_{i \in [1,k]} \rangle : \mathbb{N} \times \psi_* : \psi_\beta \neq \psi_{*} \lor \psi(\Theta^n) \neq \psi(\Theta^*)$
+
+\subsection{Result 7: A Sequence Transformer\cite{Lutalo2025transpsy}\cite{transformatics}}
+
+$\Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta \xrightarrow{f(\Theta)=\Theta^*} \Theta^* = \langle \theta^*_{i \in [1,k]} \rangle: \mathbb{N} \times \psi_* 
+;\\ \psi_\beta \neq \psi_{*} \lor \psi(\Theta^n) \neq \psi(\Theta^*)$
+
+\subsection{Result 8: A Sequence Filter\cite{transformatics}}
+
+$\Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta \xrightarrow{f(\Theta,\psi_{\beta^*})=\Theta^*} \Theta^* = \langle \theta^*_{i \in [1,k]} \rangle : \mathbb{N} \times \psi_{\beta^*} ;\\ k \in \mathbb{N} : \psi_{\beta^*} \subseteq \psi_\beta \implies \invpi(\psi_{\beta^*}) = k \leq \invpi(\psi_\beta) \implies \invpi(\Theta^*) \leq \invpi(\Theta^n) $
+
+\subsection{Result 9: A Sequence Generator\cite{transformatics}\cite{lutalo2025transformatic}}
+
+$\Theta^n | \emptyset \xrightarrow{f(\psi_\beta,k))=\Theta^*} \Theta^k = \langle \beta^*_{i \in [1,k]} \rangle : \mathbb{N} \times \psi_{\beta} : k \in \mathbb{N} : \forall \beta_i \in \Theta^k \implies \beta_i \in \psi_\beta \quad \land \quad k \geq 1 $
+
+\subsection{Result 10: A Sequence Sampler\cite{lutalo_2025_trans_genetics}}
+
+$\Theta^n \xrightarrow{f(\Theta,k))=\Theta^k} \Theta^k = \langle \theta_{i \in [1,k]} \rangle : \mathbb{N} \times \psi(\Theta^n) : k,n \in \mathbb{N} \land k \geq 1$
+
+
+%%%---------[ EXTENSION ]-----------%%%
+
+
+\section{10 Proposed Abstractions Leveraging Transformatics}
+
+\subsection{Proposal 1: The o-SSI Sequence from any Sequence\cite{ossipaper}}
+
+Assume we consider the sequence $\Theta: \mathbb{N} \times \psi_*$ of any length and spanning an arbitrary symbol set $\psi_*$. Then, in case we wish to reduce $\Theta$ to a representative sequence $\Theta_{ossi}$ that only contains elements of $\Theta$ spanning the symbol set, $\psi_\beta$, of some particular base, $\beta$; in which case, $\Theta_{ossi}$ would be an \textbf{orthogonal symbol set identity} (o-SSI) sequence under base-$\beta$, then, the following o-SSI-generator --- also \textbf{an extractor}\footnote{In the sense that, where a sequence already contains the essential symbols spanning some particular symbol set, and even though they might be scattered about or `buried' around in the sequence surrounded by `noise', the function would merely extract those essential symbols [only,] from that sequence in their natural order of first occurrence.} and \textbf{a reducer} transformer, defined using the calculus and semantics of transformatics, would suffice\footnote{Say, and as almost all transformatics might be in practice --- readily translatable into a working or equivalent computer program based on or defined using the chaining of sequence transformers such as in a language as TEA\cite{cli_tttt}.}:\\
+
+
+\begin{transf}[The \textbf{o-SSI Extractor}]
+\label{TRANSFOSSI}
+$\Theta \langle \theta_{i \in [1,n]} \rangle: \mathbb{N} \times \psi_*  \xrightarrow{O_{filter}(\Theta,\psi_\beta)} \Theta^k \langle \theta_i \rangle : \mathbb{N} \times \psi_\beta = \Theta_{ossi};\\ 0 \leq k \leq \invpi(\psi_\beta) \leq \invpi(\Theta) = n \in \mathbb{N} : \forall \theta_i \in \Theta^k \quad \exists \theta_i \in \psi_\beta \quad\\
+\land \quad \forall i,j \in \mathbb{N} \land \theta_i, \theta_j \in \Theta^k: I(\theta_i,\Theta) \leq I(\theta_j,\Theta) \implies I(\theta_i,\Theta^k) \leq I(\theta_j,\Theta^k) $\\
+\end{transf}
+
+
+Note that, the \textbf{o-SSI Sequence}, $\Theta_{ossi}$, of any sequence $\Theta$ under $\beta$ would likewise be related to the concept of the \textbf{Specific Symbol Set}\footnote{Refer to \textbf{Definition 3} in \cite{ossipaper}}, $\hat{\psi}(\Theta)$, of that sequence, in the sense that, at most, $\Theta_{ossi}$ is equivalent to $\hat{\psi}_\beta(\Theta)$  or that their cardinalities and memberships are related as:
+
+\begin{equation}
+\invpi(\Theta_{ossi}) \leq  \invpi(\hat{\psi}_\beta(\Theta)) \leq \invpi(\psi_\beta) \leq  \invpi(\Theta)
+\end{equation}
+
+and as for membership:
+
+
+\begin{equation}
+\psi(\Theta_{ossi}) \subseteq  \hat{\psi}_\beta(\Theta) \subseteq \psi_\beta \subseteq  \Theta
+\end{equation}
+
+
+\subsection{Proposal 2: The Anagram Distance Between Any Two Sequences\cite{adtpaper}}
+
+Occasionally, one shall find that they need to quantify how different some two or more sequences are. In the simplest case, we might merely sort a collection of sequence by the relative size of each sequence, and thus by their sequence cardinality for example --- $\invpi(\Theta)$ Vs $\invpi(\Theta^*)$ for some two sequences involved in a general transformation such as:\\
+
+\begin{trans}
+\label{TRANS1}
+$\Theta \rightarrow \Theta^* \quad \implies \quad \invdel_{\Theta,\Theta^*} = (\invpi(\Theta) - \invpi(\Theta^*));\\
+\invdel_{\Theta,\Theta^*} = \begin{cases}
+< 0 & compression\\
+ 0 & conservation\\
+ > 0 & contraction
+ \end{cases}
+$
+\end{trans}
+
+However \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}} only caters for comparisons or analysis relative to size of the sequences being compared. And such that $\invdel_{\Theta,\Theta^*}$ shall work just fine where the purpose of the sequence analysis is just concerned with the relative sizes of the sequences. But, and as we established in the \textbf{Anagram Distance Theory}(ADT) paper\cite{adtpaper}, there are many important cases when it is necessary to compare two or more sequences relative to the relative ordering of members in them and not just by their member composition or frequencies. Thus the \textbf{Anagram Distance Measure}(ADM), and which, for any two sequences as presented above, the essential measure would be:
+
+
+\begin{equation}
+\tilde{A}(\Theta \rightarrow \Theta^*) = \frac{1}{\invpi(\Theta)} \times \sum\limits_{\forall \theta_i \ \in \Theta}^{\invpi(\Theta)} | I(\theta_i,\Theta) - I(\theta_i,\Theta^*)|
+\end{equation} 
+
+Which, as we saw in \cite{adtpaper}, has the interesting interpretation as:
+
+
+\begin{equation}
+\label{EQTHET}
+\tilde{A}(\Theta \rightarrow \Theta^*) = \begin{cases}
+0, & \Theta = \Theta^*, \\
+\leq 1, & \Theta \approx \Theta^*, \\
+> 1, & \Theta \ll \Theta^*.
+\end{cases}
+\end{equation}
+
+And thus can help us observe/compute, quantify and appreciate, the \textbf{relative disorder} resulting from one sequence being transformed into another (of potentially similar cardinality and member composition/distribution). A very important formalism in mathematical statistics dealing with measures of variability where traditional measures such as the range, mean deviation,
+variance and standard deviation statistics can't catch any actual differences between two or more sequences as we quantifiably/provably demonstrated in \cite{transformatics}, but also, for simpler difference measures such as just counts/cardinality as we have seen in \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}}, and earlier on in \cite{lutalo_2025_trans_genetics}.
+
+
+\subsection{Proposal 3: The Transformer Compression Ratio of any Sequence Transformation\cite{transformatics}}
+
+blah blah...
+
+\subsection{Proposal 4: The Piecemeal Compression Ratio of Any Sequence Transformation\cite{transformatics}}
+
+blah blah...
+
+
+\subsection{Proposal 5: The Modal Sequence Statistic of Any Sequence\cite{transformatics}}
+
+blah blah...
+
+
+\subsection{Proposal 6: The Characteristic of Any Sequence\cite{lutalo_2025_trans_genetics}}
+
+blah blah...
+
+\subsection{Proposal 7: The Population Characteristic of Any Collection of Sequences\cite{lutalo_2025_trans_genetics}}
+
+blah blah...
+
+\subsection{Proposal 8: A Super Sequence for One or More Sequences\cite{lutalo_2025_trans_genetics}}
+
+blah blah...
+
+\subsection{Proposal 9: Programs as Chains of Sequence Transformers (Transformer-Chains)\cite{lutalo_2025_trans_genetics}\cite{cli_tttt}}
+
+blah blah...
+
+\subsection{Proposal 10: Entropy of a Sequence\cite{lnspaper}}
+
+blah blah...
+
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
+
+% try to explore how to fit the entire paper on 1 page. Especially using A4 size paper.

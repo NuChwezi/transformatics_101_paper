@@ -1,0 +1,21 @@
+extensions:
+
+11. The o-SSI Sequence of any symbol set.
+
+12. The Anagram Distance Between Any Two Sequences.
+
+13. The Compression Ratio of any Sequence Transformation.
+
+14. The Piecemeal Compression Ratio of Any Sequence Transformation.
+
+15. The Modal Sequence Statistic of Any Sequence
+
+16. The Characteristic of Any Sequence.
+
+17. The Population Characteristic of Any Collection of Sequences.
+
+18. A Super Sequence for One or More Sequences.
+
+19. A Transformation Program (Sequence of Transformers).
+
+20. Entropy of a Sequence.
