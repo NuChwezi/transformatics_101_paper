@@ -59,7 +59,7 @@ Joseph~Willrich Lutalo.
 
 \bibitem{Lutalo2025transpsy}
 Joseph~Willrich Lutalo.
-\newblock {Transformatics for PSYCHOLOGY}.
+\newblock \textbf{Transformatics for PSYCHOLOGY}.
 \newblock {\em FigShare}, 9 2025.
 \newblock \textit{Presented at the 13th International East African Psychology
   Conference, a copy is accessible via:}
@@ -86,5 +86,13 @@ Joseph~Willrich Lutalo.
 \newblock \url{https://github.com/mcnemesis/cli_tttt/}, 2024.
 \newblock \textit{Single Source of Truth concerning the reference standards of
   TEA on the web and native operating systems.}
+
+\bibitem{Lutalo2024TEATAZ}
+Joseph~Willrich Lutalo.
+\newblock \textbf{TEA TAZ - Transforming Executable Alphabet A: to Z: COMMAND
+  SPACE SPECIFICATION}.
+\newblock {\em Academia.edu}, 2024.
+\newblock Accessed on 14 May, 2025, via
+  \url{https://www.academia.edu/122871672/TEA_TAZ_Transforming_Executable_Alphabet_A_to_Z_COMMAND_SPACE_SPECIFICATION}.
 
 \end{thebibliography}
