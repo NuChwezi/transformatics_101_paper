@@ -2,11 +2,11 @@
 
 \bibitem{Lutalo2025_trans_101}
 Joseph~Willrich Lutalo.
-\newblock {Transformatics 101}.
+\newblock \textbf{Transformatics 101}.
 \newblock {\em Thesis}, 10 2025.
-\newblock A first distillation of the essential foundations of Transformatics
-  as its own field of mathematics. Accessible via:
-  \url{https://doi.org/10.6084/m9.figshare.30285106.v1}.
+\newblock \textit{A first distillation of the essential foundations of
+  Transformatics as its own field of mathematics. Accessible via:}
+  \url{https://doi.org/10.6084/m9.figshare.30285106.v1}".
 
 \bibitem{lutalo_2025_trans101_1page}
 Joseph~Willrich Lutalo.
